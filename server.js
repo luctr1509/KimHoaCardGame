@@ -5,7 +5,7 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(cors({ origin: "*", methods: ["GET", "POST", "OPTIONS"], credentials: true }));
+app.use(cors({ origin: "*", methods: ["GET", "POST", "OPTIONS"] }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
